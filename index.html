@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h2>Interactive To-Do List</h2>
+        <!-- Input fields -->
+        <form id="task-form">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name" placeholder="Enter task name">
+            <label for="task-desc">Task Description:</label>
+            <textarea id="task-desc" placeholder="Enter task description"></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+        <!-- Table display -->
+        <table id="task-table">
+            <thead>
+                <tr>
+                    <th>Item No.</th>
+                    <th>Task Name</th>
+                    <th>Task Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
